@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Discover effective focus techniques and tools to enhance your study sessions and boost productivity. Create a distraction-free environment and maintain concentration for better academic performance.">
+    <meta name="keywords" content="Cramly, study companion, focused study,education, learning">
+    <title> Cramly.space | Focus  </title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="CramlyLogo.png">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+<header>
+  <nav>
+    
+    <div class="nav-logo">
+      <img src="cramlylogo.png" alt="Cramly Logo" style="height:60px;">
+    </div>
+
+    <ul class="nav-links">
+      <li><a href="index.html">My Study Hub</a></li>
+      <li><a href="focus.html">Focus ⭐️</a></li>
+      <li><a href="calculator.html">Calculator</a></li>
+      <li><a href="findai.html">AI Study Tools</a></li>
+      <li><a href="recs.html">Study Picks + Tricks</a></li>
+    </ul>
+  </nav>
+</header>
+<br>
+ <section class="section-quote">
+    <div class="quote-icon">✨</div>
+    <div class="quote-content">
+      <div class="quote-label">Study Inspiration</div>
+      <p id="quote-text">Loading your daily boost...</p>
+      <p id="quote-author"></p>
+    </div>
+    <button class="btn-new-quote" id="new-quote-btn" onclick="fetchQuote()">New Quote ↻</button>
+  </section>
+  <br>
+<section class="feature-section section-tan reverse">
+  <div class="feature-text">
+    <h2>How to Use the Pomodoro Technique</h2>
+    <p class="feature-tagline">By breaking your work into manageable intervals, you can stay motivated and productive throughout your study sessions.</p>
+    <p class="feature-copy">
+     <ol class="pomodoro-steps">
+            <li>Set a timer for 25 minutes and focus on a single task</li>
+            <li>Take a 5-minute break after each Pomodoro</li>
+            <li>After four Pomodoros, take a longer break of 30 minutes</li>
+            <li>Repeat the cycle to maintain focus and productivity</li>
+            <li>By breaking your work into manageable intervals, 
+            you can stay motivated and productive throughout your study sessions.</li>
+        </ol>
+    </p>
+    <a href="https://www.youtube.com/watch?v=aQ_xKuXo0D0" class="btn-focus">Learn More</a>
+     <p class="feature tagline">Try it out now below and see how much you can accomplish in just 25 minutes of focused work!</p>
+  </div>
+   <div class="pomodoro-image">
+    <img src="pomodoro.png" alt="Pomodoro timer">
+  </div>
+  </section>    
+
+<br>
+
+<div class="pt-wrapper">
+  <div class="pt-container">
+    <h1 class="pt-title">Focus</h1>
+    <hr class="pt-divider">
+    <p class="pt-timer" id="timer">25:00</p>
+
+    <div class="pt-button-wrapper">
+      <button id="start" class="pt-btn pt-btn-start">Start</button>
+      <button id="stop" class="pt-btn pt-btn-stop">Stop</button>
+      <button id="reset" class="pt-btn pt-btn-reset">Reset</button>
+    </div>
+  </div>
+</div>
+
+<div class="pt-wrapper">
+  <div class="pt-container">
+    <h1 class="pt-title">Break</h1>
+    <hr class="pt-divider">
+    <p class="pt-timer" id="timer-sb">05:00</p>
+
+    <div class="pt-button-wrapper">
+      <button id="start-sb" class="pt-btn pt-btn-start">Start</button>
+      <button id="stop-sb" class="pt-btn pt-btn-stop">Stop</button>
+      <button id="reset-sb" class="pt-btn pt-btn-reset">Reset</button>
+    </div>
+  </div>
+</div>
+
+<div class="pt-wrapper">
+  <div class="pt-container">
+    <h1 class="pt-title">Long Break</h1>
+    <hr class="pt-divider">
+    <p class="pt-timer" id="timer-lb">30:00</p>
+
+    <div class="pt-button-wrapper">
+      <button id="start-lb" class="pt-btn pt-btn-start">Start</button>
+      <button id="stop-lb" class="pt-btn pt-btn-stop">Stop</button>
+      <button id="reset-lb" class="pt-btn pt-btn-reset">Reset</button>
+    </div>
+  </div>
+</div>
+
+<div class="cte-wrapper">
+  <div class="cte-container">
+    <h1 class="cte-title">Countdown to Deadline</h1>
+    
+    <hr class="cte-divider">
+
+    <div class="cte-input-wrapper">
+      <label for="exam-date">Select your exam date & time:</label>
+      <input type="datetime-local" id="exam-date" class="cte-input">
+      <button id="set-exam" class="pt-btn pt-btn-start">Set Countdown</button>
+    </div>
+
+    <div class="cte-timer">
+
+      <div class="time">
+        <h2 id="days">00</h2>
+        <p>Days</p>
+      </div>
+
+      <div class="time">
+        <h2 id="hours">00</h2>
+        <p>Hours</p>
+      </div>
+
+      <div class="time">
+        <h2 id="minutes">00</h2>
+        <p>Minutes</p>
+      </div>
+
+      <div class="time">
+        <h2 id="seconds">00</h2>
+        <p>Seconds</p>
+      </div>
+
+    </div>
+
+  </div>
+</div>
+<br>
+
+
+<script src="interact.js"></script>
+
+<footer></footer>
+   <p> &copy; 2026 Cramly.space | All Rights Reserved </p>
+</footer>

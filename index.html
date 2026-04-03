@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Your new study companion helping you to earn better grades without burning out. Cramly.space helps keep learning fun and focused by connecting you with the best study spots, tutors, and resources in your area.">
+    <meta name="keywords" content="Cramly, pomodoro timer, AI study tools, focused study, notes templates, learning">
+    <title> Cramly.space | Home  </title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="CramlyLogo.png">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+<header>
+  <nav>
+    
+    <div class="nav-logo">
+      <img src="cramlylogo.png" alt="Cramly Logo" style="height:60px;">
+    </div>
+
+    <ul class="nav-links">
+       <li><a href="index.html">Home</a></li>
+      <li><a href="focus.html">Focus ⭐️</a></li>
+      <li><a href="findai.html">AI Study Tools</a></li>
+      <li><a href="recs.html">Study Picks + Tricks</a></li>
+    </ul>
+  </nav>
+</header>
+<br>
+<section class="hero">
+
+  <div class="hero-text">
+    <h1>Welcome to Cramly.space</h1>
+
+    <p class="tagline">
+      Your distraction free study hub featuring your own pomodoro timer and study motivation. Explore and find the latest AI study tools that students are currently using and study recommendations all in one place.
+    </p>
+
+    <a href="focus.html" class="btn-focus">Start Focusing</a>
+  </div>
+
+  <div class="hero-image">
+    <img src="cramlylogo.png" alt="Cramly Logo">
+  </div>
+</section>
+
+
+
+<section class="feature-section section-cream">
+  <div class="feature-text">
+    <h2>Get Extra Help from Online Resources</h2>
+    <p class="feature-tagline">Studying made accessible everywhere anytime</p>
+    <p class="feature-copy">
+      The internet is filled with millions of teaching experts and study gurus. Cramly.space has put together the best choices for you to discover
+    </p>
+    <a href="recs.html" class="btn-focus">Browse Now</a>
+  </div>
+
+  <div class="feature-image">
+    <img src="studying.png" alt="Browse Study recommendations">
+  </div>
+</section>
+
+<section class="feature-section section-pink">
+  <div class="feature-text">
+    <h2>Find the latest AI study tools</h2>
+    <p class="feature-tagline">Leverage AI for even more productive study sessions</p>
+    <p class="feature-copy">
+      Students across the globe are enhancing their studies with AI, start today to join in.
+    </p>
+    <a href="findai.html" class="btn-focus">Start Today</a>
+  </div>
+
+  <div class="feature-image">
+    <img src="ai.png" alt="AI study tools illustration">
+  </div>
+</section>
+
+<section class="feature-section section-tan-reverse">
+  <div class="feature-text">
+    <h2>Are you a student looking for a bit of extra cash?</h2>
+    <p class="feature-tagline">Cramly.space is looking for student ambassadors to promote our platform and reach more students</p>
+    <p class="feature-copy">
+      It this is something you would be interested in email us below today!! Earn up to €15 per post, no experience needed. Cramly.space wants to meet everyday students like you.
+    </p>
+    <a href="mailto:hannahkayer11@gmail.com" class="btn-focus">Email us</a>
+  </div>
+
+  <div class="feature-image">
+    <img src="social.png" alt="Student ambassadors">
+  </div>
+</section>
+
+<section class="feature-section section-cream">
+  <div class="feature-text">
+    <h2>What do you want to see next</h2>
+    <p class="feature-tagline">A platform for student, made by students</p>
+    <p class="feature-copy">
+     Here at Cramly.space we value the input of students, we want to support you the best way we can, submit your ideas for new features, resources or AI tools you would like to share to other students across the globe.
+    </p>
+   <button class="btn-focus" onclick="openModal()">Share Now</button>
+  </div>
+
+  <div class="feature-image">
+    <img src="help.png" alt="Help share new ideas">
+  </div>
+</section>
+<div class="overlay" id="overlay">
+    <div class="modal">
+      <button class="modal-close" onclick="closeModal()">&#x2715;</button>
+ 
+      <div id="form-view">
+        <h3>Share your idea ✨</h3>
+        <p class="sub">We read every single submission!</p>
+ 
+        <div class="form-group">
+          <label for="c-name">Name</label>
+          <input type="text" id="c-name" placeholder="Your name"/>
+          <p class="error-msg" id="err-name">Please enter your name.</p>
+        </div>
+ 
+        <div class="form-group">
+          <label for="c-email">Email</label>
+          <input type="email" id="c-email" placeholder="you@email.com"/>
+          <p class="error-msg" id="err-email">Please enter a valid email.</p>
+        </div>
+ 
+        <div class="form-group">
+          <label for="c-idea">Your idea</label>
+          <textarea id="c-idea" placeholder="What would you love to see on Cramly.space?"></textarea>
+          <p class="error-msg" id="err-idea">Please tell us your idea.</p>
+        </div>
+ 
+        <button class="btn-submit" onclick="submitForm()">Send it in 🚀</button>
+      </div>
+ 
+      <div class="success" id="success-view">
+        <div class="tick">🎉</div>
+        <h4>Thanks for sharing!</h4>
+        <p>Your idea is in — we'll take a look soon.</p>
+      </div>
+    </div>
+  </div>
+
+<script src="modal.js"></script>
+<hr>
+<footer></footer>
+   <p> &copy; 2026 Cramly.space | All Rights Reserved </p>
+</footer>
